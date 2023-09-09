@@ -1,0 +1,11 @@
+{
+  "extends": "@mntm",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "."
+  },
+  "rules": {
+    "unicorn/no-thenable": 0,
+    "@typescript-eslint/promise-function-async": 0
+  }
+}

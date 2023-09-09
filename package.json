@@ -1,0 +1,75 @@
+{
+  "name": "usable-atom",
+  "version": "0.0.0",
+  "main": "./lib/index.js",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.mjs",
+      "module": "./lib/index.mjs",
+      "default": "./lib/index.js"
+    },
+    "./react": {
+      "types": "./lib/react/index.d.ts",
+      "import": "./lib/react.mjs",
+      "module": "./lib/react.mjs",
+      "default": "./lib/react.js"
+    },
+    "./react-shim": {
+      "types": "./lib/react-shim/index.d.ts",
+      "import": "./lib/react-shim.mjs",
+      "module": "./lib/react-shim.mjs",
+      "default": "./lib/react-shim.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "author": {
+    "name": "Anton Petrov",
+    "email": "im@petrov.engineer",
+    "url": "https://petrov.engineer"
+  },
+  "description": "A reactive event based state management library",
+  "license": "MIT",
+  "keywords": [
+    "state",
+    "functional",
+    "mutable",
+    "live"
+  ],
+  "homepage": "https://github.com/eolme/usable-atom",
+  "bugs": "https://github.com/eolme/usable-atom/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eolme/usable-atom.git"
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "node --test --experimental-test-coverage tests"
+  },
+  "devDependencies": {
+    "@mntm/eslint-config": "^1.4.0",
+    "@types/node": "^20.5.9",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/use-sync-external-store": "^0.0.4",
+    "eslint": "^8.48.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.5.3"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "use-sync-external-store": "^1"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "use-sync-external-store": {
+      "optional": true
+    }
+  }
+}
